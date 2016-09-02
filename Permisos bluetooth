@@ -1,0 +1,9 @@
+Hay dos tipos de permisos: BLUETOOTH (imprescindible) y BLUETOOTH_ADMIN (para descubrir dispositivos o poder cambiar
+la configuración bluetooth, con lo que también hace falta). Se añaden al manifest de esta forma:
+
+<manifest ... >
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  ...
+</manifest>
+
+Para añadir BLUETOOTH_ADMIN debe estar también BLUETOOTH, así que hay que poner ambas.
